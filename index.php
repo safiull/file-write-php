@@ -32,7 +32,7 @@
             $data['dpt'] = $_POST['dpt'];
 
             $fp = fopen('data.txt', 'a');
-            fwrite($fp, "Name: " .$data['name']."<br> Age: " . $data['age'] ."<br> Depertment" . $data['dpt']."<br>");
+            fwrite($fp, "Name: " .$data['name']."Age: " . $data['age'] ."Depertment" . $data['dpt']);
             fclose($fp);
 
             header("Location: index2.php");
